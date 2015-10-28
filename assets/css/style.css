@@ -1,0 +1,521 @@
+/*
+ * Author: Adrian Li
+ * URL: http://adrianmcli.com
+ *
+ * Project Name: TrueChimp
+ * URL: http://TrueChimp.com
+ * Version: 1.0
+ */
+
+/* Import fonts */
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+
+/*	################################################################
+	0. CUSTOM STYLES
+################################################################# */
+
+
+.cbp-caption-activeWrap * {
+	color: white;
+	padding: 0 20px;
+}
+
+.cbp-caption-activeWrap h1 {
+	font-size: 24px;
+}
+
+.tomato {
+	color: tomato;
+}
+
+.mask {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.55);
+	z-index: 1;
+}
+
+.circle-icon {
+	background-color: #2f2f2f;
+	color: white;
+	font-size: 60px;
+	width: 120px;
+	height: 120px;
+	line-height: 120px;
+	margin: 0 auto;
+	border-radius: 50%;
+	position: relative;
+	text-align: center;
+}
+
+.steps-title {
+	font-weight: 700;
+}
+
+.steps-text {
+
+}
+
+/*	################################################################
+	1. GENERAL STRUCTURES
+################################################################# */
+
+* { 
+	margin: 0;
+	padding: 0px;
+    font-family: 'Lato', sans-serif;
+} 
+body { 
+	background: #fff; 
+	margin: 0; 
+	color: #5a5a5a;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato', sans-serif;
+	font-weight: 300;
+}
+
+
+p { 
+	padding: 0; 
+	margin-bottom: 12px; 
+    font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 18px; 
+	line-height: 28px;
+	color: #666; 
+	margin-top: 10px; 
+}
+
+html,
+body {
+	height: 100%;
+}
+
+.navbar .navbar-brand {
+	color: #bbb;
+}
+
+.navbar-brand {
+	font-weight: 900;
+	font-size: 16px;
+	color: white;
+}
+
+.navbar-brand .chimp-logo {
+	display: inline;
+	height: 20px;
+	vertical-align: top;
+}
+
+.navbar-inverse .navbar-brand {
+  color: #bbb;
+}
+
+.navbar-inverse {
+	background-color: transparent;
+	border: 0px;
+}
+
+.alignleft { float: left; }
+.alignright { float: right; }
+.aligncenter {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	clear: both;
+}
+.centered {text-align: center}
+.mt {margin-top: 50px;}
+.mb {margin-bottom: 50px;}
+.mtb {margin-top: 50px; margin-bottom: 50px;}
+.mtb2 { margin-top: 100px; margin-bottom: 100px;}
+.ptb {padding-top: 80px; padding-bottom: 80px;}
+
+.clear {
+	clear: both;
+	display: block;
+	font-size: 0;
+	height: 0;
+	line-height: 0;
+	width:100%;
+}
+::-moz-selection  {
+	color: #fff;
+	text-shadow:none;
+	background:#2B2E31;
+}
+::selection {
+	color: #fff;
+	text-shadow:none;
+	background:#2B2E31;
+}
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+a { 
+	padding: 0;
+	margin: 0;
+	text-decoration: none; 
+	-webkit-transition: background-color .4s linear, color .4s linear;
+	-moz-transition: background-color .4s linear, color .4s linear;
+	-o-transition: background-color .4s linear, color .4s linear;
+	-ms-transition: background-color .4s linear, color .4s linear;
+	transition: background-color .4s linear, color .4s linear;
+	color: #1abc9c;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+  color:#696E74;
+}
+
+/* BUTTONS */
+.btn-green {
+	background: #1abc9c;
+	color: white;
+	border-radius: 2px;
+}
+
+.btn-green:hover {
+	background: #16a085;
+	color: white;
+}
+
+/* HORIZONTAL LINE */
+hr {
+	border: 1px solid tomato;
+	width: 120px;
+}
+
+/* H4 Global Modification */
+
+h4 {
+	font-weight: 700;
+}
+
+/* Color Theme */
+.green {
+	color: #1abc9c;
+}
+
+/* Size Helper */
+
+.big {
+	font-size: 60px;
+}
+
+.text16 {
+	font-size: 16px;
+}
+
+.text28 {
+	font-size: 28px;
+}
+
+.text28 i {
+	padding: 8px;
+}
+
+/* HEADER SECTION */
+#h {
+	background: url(../img/header.jpg) no-repeat center center fixed;
+	/*background: #12a5f4;*/
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	padding-top: 30px;
+	text-align: center;
+	/*min-height: 480px;*/
+	width: 100%;
+	position: relative;
+}
+
+@media (min-width: 768px) {
+	#h {
+		min-height: 360px;
+	}
+}
+
+#h h1, #h h2, #h h3 {
+	color: #dddddd;
+}
+
+#h h3.logo {
+	font-weight: 900;
+	text-align: center;
+	color: #dddddd;
+	border: 3px solid #dddddd;
+	width: 150px;
+	padding: 12px;
+}
+
+#h .container {
+	position: relative;
+	z-index: 2;
+}
+
+#h p {
+	color: #dddddd;
+}
+
+#h h1 {
+	font-size: 36px;
+	font-weight: 700;		
+}
+
+#h h3 {
+	font-size: 18px;
+}
+
+@media (min-width: 768px) {
+	#h h1 {
+		font-size: 70px;
+		font-weight: 300;		
+	}
+	#h h3 {
+		font-size: 24px;
+	}
+}
+
+#h .continue {
+	font-size: 30px;
+	color: #dddddd;
+	margin-top: 80px;
+}
+
+/* intro */
+#intro hr {
+	margin: auto;
+}
+
+#intro h3 {
+	text-align: center;
+	font-weight: 700;
+}
+
+@media (min-width: 768px) {
+	#intro hr {
+		margin: 20px 0;
+	}	
+	#intro h3 {
+		text-align: left;
+	}
+}
+
+/* CALL TO ACTION */
+#cta {
+	background: #2f2f2f;
+	color: white;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#cta h2 {
+	text-align: center;
+}
+
+/* GREY SECTION */
+
+#g {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background: #f7f8fa;
+}
+
+
+#testimonial {
+	padding-bottom: 50px;
+	padding-top: 50px;
+	min-height: 450px;
+	background: #2f2f2f;
+	color: white;
+}
+
+#testimonial p {
+	font-size: 16px;
+	color: #ccc;
+}
+
+#testimonial hr {
+	border: solid 1px #ccc;
+	width: 80px;
+}
+
+
+/* GENERAL CONF */
+
+i {
+	margin-right: 10px;
+}
+
+input {
+	font-size: 18px;
+	min-height: 40px;
+	border-radius: 2px;
+	line-height: 20px;
+	padding: 11px 30px 12px;
+	border: none;
+	margin-bottom: 10px;
+	background-color: #e9f0f2;
+	-webkit-transition: background-color 0.2s;
+	transition: background-color 0.2s;
+}
+
+.subscribe-input {
+	float: left;
+	width: 70%;
+	text-align: left;
+	margin-right: 2px;
+}
+
+.subscribe-submit {
+	right: 0;
+}
+
+/*Overflow Hidden*/
+
+.of {
+	overflow: hidden;
+}
+
+/*	################################################################
+	2. CARD STYLES
+################################################################# */
+
+.strikethrough {
+  position: relative;
+}
+.strikethrough:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 50%;
+  right: 0;
+  border-top: 2px solid;
+  border-color: #999;
+
+  -webkit-transform:rotate(-15deg);
+  -moz-transform:rotate(-15deg);
+  -ms-transform:rotate(-15deg);
+  -o-transform:rotate(-15deg);
+  transform:rotate(-15deg);
+}
+
+/* Card Container */
+
+#card-container .card-info {
+	padding: 8px;
+	position: relative;
+}
+
+#card-container .card-info .card-title {
+	color: #444;
+	display: block;
+	font-size: 18px;
+	font-weight: 700;
+	margin-bottom: 6px;
+}
+
+#card-container .card-info .card-desc {
+	margin-bottom: 12px;
+}
+
+#card-container .cbp-price-info {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+#card-container .cbp-price-info .cbp-price-original{
+	background-color: #444;
+	color: white;
+	padding: 10%;
+	font-size: 16px;
+	text-align: center;
+	vertical-align: bottom;
+}
+
+#card-container .cbp-price-info .cbp-price {
+	background-color: tomato;
+	color: white;
+	padding: 10%;
+	font-size: 24px;
+}
+
+#card-container {
+	margin: 20px;
+}
+
+#card-container .cbp-item-wrapper {
+	padding: 7px;
+}
+
+.progress-bar {
+	background-color: #eee;
+	height: 12px;
+	width: 100%;
+	box-shadow: none;
+	border-radius: 6px;
+	position: relative;
+	margin: 10px 0 15px 0;
+}
+
+.progress-bar-fill {
+	background-color: #ff8367;
+	height: 100%;
+	width: 75%;
+	border-radius: 6px;
+}
+
+.progress-above-info {
+	position: relative;
+	color: #999;
+}
+
+.progress-desc {
+	color: #999;
+}
+
+.card-pledged-num {
+	font-size: 36px;
+}
+
+.progress-left {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	text-align: right;
+}
+
+.card-pledges-left {
+	font-size: 36px;
+}
+
+.card-bottom-info {
+	margin-top: 20px;
+	position: relative;
+	color: #999;
+}
+
+.progress-goal {
+	text-align: right;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+.progress-goal-number {
+	font-size: 24px;
+}
