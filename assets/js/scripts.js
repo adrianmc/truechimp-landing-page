@@ -1,5 +1,13 @@
 $(document).ready( function() {
 
+  $(document).ready(function(){
+    $('.btn-learn-more').click(function(){
+      $('html, body').animate({
+        scrollTop: $('#intro').offset().top - 50
+      }, 1000);
+    });
+  });
+
   $(document).scroll(function(){
     scrollPos = $(window).scrollTop();
     bar = $('.navbar')
@@ -35,7 +43,7 @@ $(document).ready( function() {
       width: 1000,
       cols: 4
     },{
-      width: 720,
+      width: 480,
       cols: 2
     },{
       width: 360,
