@@ -1,13 +1,27 @@
 $(document).ready( function() {
-
-  $(document).ready(function(){
-    $('.btn-learn-more').click(function(){
-      $('html, body').animate({
-        scrollTop: $('#intro').offset().top - 50
-      }, 1000);
-    });
+  
+  $('.intro-click').click(function(){
+    $('html, body').animate({
+      scrollTop: $('#intro').offset().top - 100
+    }, 1000);
+  });
+  $('.cta-click').click(function(){
+    $('html, body').animate({
+      scrollTop: $('#cta').offset().top - 50
+    }, 1000);
+  });
+  $('.preview-click').click(function(){
+    $('html, body').animate({
+      scrollTop: $('#preview').offset().top - 100
+    }, 1000);
+  });
+  $('.faq-click').click(function(){
+    $('html, body').animate({
+      scrollTop: $('#faq').offset().top - 50
+    }, 1000);
   });
 
+  // Fade navbar opaque
   $(document).scroll(function(){
     scrollPos = $(window).scrollTop();
     bar = $('.navbar')
@@ -23,19 +37,7 @@ $(document).ready( function() {
     }
   });
 
-  $('#grid-container').cubeportfolio({
-    gapHorizontal: 0,
-    gapVertical: 0,
-    caption: 'zoom',
-    mediaQueries:[{
-      width: 768,
-      cols: 4
-    },{
-      width: 360,
-      cols: 2
-    }]
-  });
-
+  // preview cards section
   $('#card-container').cubeportfolio({
     gapHorizontal: 20,
     gapVertical: 20,
@@ -49,5 +51,17 @@ $(document).ready( function() {
       width: 360,
       cols: 1
     }]
+  });
+
+  // FAQ section
+  $('#js-grid-faq').cubeportfolio({
+    filters: '#js-filters-faq',
+    defaultFilter: '*',
+    animationType: 'sequentially',
+    gridAdjustment: 'default',
+    displayType: 'default',
+    caption: 'expand',
+    gapHorizontal: 0,
+    gapVertical: 0
   });
 });

@@ -15,6 +15,7 @@
 
     <!-- Custom styles for this template -->
     <link href="assets/css/ionicons.min.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
     <link href="assets/css/custom-animations.css" rel="stylesheet">
     <link href="assets/cubeportfolio/css/cubeportfolio.min.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
@@ -32,439 +33,335 @@
 
   <body>
   
-  <!-- ********** NAV SECTION ********** --> 
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#">
-        	<img src="assets/img/logo.png" class="chimp-logo">
-        	<span class="tomato">True</span>Chimp
-        </a>
-      </div>
-      <div id="navbar" class="collapse navbar-collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">About</a></li>
-          <li><a href="#">How it Works</a></li>
-          <li><a href="#">Sign Up</a></li>
-        </ul>
-      </div><!--/.nav-collapse -->
-    </div>
-  </nav>
+	  <!-- ********** NAV SECTION ********** --> 
+	  <nav class="navbar navbar-inverse navbar-fixed-top">
+	    <div class="container">
+	      <div class="navbar-header">
+	      	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	          <span class="sr-only">Toggle navigation</span>
+	          <span class="icon-bar"></span>
+	          <span class="icon-bar"></span>
+	          <span class="icon-bar"></span>
+	        </button>
+	        <a class="navbar-brand" href="#">
+	        	<img src="assets/img/logo.png" class="chimp-logo">
+	        	<span class="tomato">True</span>Chimp
+	        </a>
+	      </div>
+	      <div id="navbar" class="collapse navbar-collapse">
+	        <ul class="nav navbar-nav navbar-right">
+	          <li><a href="#" class="intro-click">How it Works</a></li> <!-- intro -->
+	          <li><a href="#" class="cta-click">Sign Up</a></li> <!-- cta -->
+	          <li><a href="#" class="preview-click">Sneak Peek</a></li> <!-- preview -->
+	          <li><a href="#" class="faq-click">FAQ</a></li> <!-- faq -->
+	        </ul>
+	      </div><!--/.nav-collapse -->
+	    </div>
+	  </nav>
   
-	<!-- ********** HEADER SECTION ********** --> 
-	<div id="h">
-		<div class="mask"></div>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-0 mt2">
-					<h1>Cool Gadgets.<br/>Unbeatable Prices.</h1>
-					<h3>TrueChimp is a <span class="tomato">crowd-buying portal</span> for cool gadgets at factory level prices. We buy directly from manufacturers to get you the <span class="tomato">best deals</span> on the internet.</h3>
-					<h3 class="subscribe-prompt"><span class="tomato">Sign up</span> to get great deals today:</h3>
-					<form class="cta-subscribe" role="form" action="register.php" method="post" enctype="plain"> 
-	    				<input type="email" name="email" class="subscribe-input" placeholder="yourname@example.com" required>
-						<button class='btn btn-lg btn-tomato subscribe-submit' type="submit">Sign Up</button>
-					</form>
-					<!-- <h3>Bringing you the best deals by <span class="tomato">crowdfunding</span> bulk orders.</h3> -->
-
-					<!-- <div class="btn btn-tomato btn-learn-more">Learn More</div> -->
-					<!-- <form action="">
-						<input type="email" name="email" class="subscribe-input" placeholder="Enter your e-mail address..." required>
-						<button class='btn btn-lg btn-tomato subscribe-submit' type="submit">Subscribe</button>
-					</form> -->
-				</div>
-
-				<div class="col-lg-5 visible-lg-block header-photos">
-					<div class="row">
-						<div class="col-md-6 no-padding">
-							<img src="assets/img/vr-dark.jpg" alt="" width="100%">
-						</div>
-						<div class="col-md-6 no-padding">
-							<img src="assets/img/speaker-dark.jpg" alt="" width="100%">
-						</div>	
+		<!-- ********** HEADER SECTION ********** --> 
+		<div id="h">
+			<div class="mask"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-0 mt2">
+						<h1>Cool Gadgets.<br/>Unbeatable Prices.</h1>
+						<h3>TrueChimp is a <span class="tomato">crowd-buying portal</span> for cool gadgets at factory level prices. We buy directly from manufacturers to get you the <span class="tomato">best deals</span> on the internet.</h3>
+						<h3><strong>We're launching soon!</strong></h3>
+						<h3 class="subscribe-prompt"><span class="tomato">Sign up</span> to get great deals on cool gadgets:</h3>
+						<form class="cta-subscribe" role="form" action="register.php" method="post" enctype="plain"> 
+		    				<input type="email" name="email" class="subscribe-input" placeholder="yourname@example.com" required>
+							<button class='btn btn-lg btn-tomato subscribe-submit' type="submit">Join Now</button>
+						</form>
 					</div>
-					<div class="row">
-						<div class="col-md-6 no-padding">
-							<img src="assets/img/speaker2-dark.jpg" alt="" width="100%">
+
+					<div class="col-lg-5 visible-lg-block header-photos">
+						<div class="row">
+							<div class="col-md-6 no-padding">
+								<img src="assets/img/vr-dark.jpg" alt="" width="100%">
+							</div>
+							<div class="col-md-6 no-padding">
+								<img src="assets/img/speaker2-dark.jpg" alt="" width="100%">
+							</div>	
 						</div>
-						<div class="col-md-6 no-padding">
-							<img src="assets/img/headphones-dark.jpg" alt="" width="100%">
-						</div>	
+						<div class="row">
+							<div class="col-md-6 no-padding">
+								<img src="assets/img/speaker1-dark.jpg" alt="" width="100%">
+							</div>
+							<div class="col-md-6 no-padding">
+								<img src="assets/img/headphones-dark.jpg" alt="" width="100%">
+							</div>	
+						</div>
+					</div><!--/col -->
+				</div><!--/row -->
+			</div><!--/container -->
+		</div><!--/header -->
+
+		<div class="container-fluid no-padding">
+			<div class="row no-gutters top-gallery">
+				<div class="col-xs-3 col-sm-3 visible-xs-block visible-sm-block">
+					<img src="assets/img/vr-dark.jpg" alt="">
+				</div>
+				<div class="col-xs-3 col-sm-3 visible-xs-block visible-sm-block">
+					<img src="assets/img/speaker2-dark.jpg" alt="">
+				</div>
+				<div class="col-xs-3 col-sm-3 visible-xs-block visible-sm-block">
+					<img src="assets/img/speaker1-dark.jpg" alt="">
+				</div>
+				<div class="col-xs-3 col-sm-3 visible-xs-block visible-sm-block">
+					<img src="assets/img/headphones-dark.jpg" alt="">
+				</div>
+			</div>
+		</div>
+
+		<!-- ********** INTRODUCTION SECTION ********** --> 
+		<div id="intro">
+			<div class="container mtb">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3 centered">
+						<h2>How it Works</h2>
+						<hr class="aligncenter">
+						<h4>Crowdsourcing Buying Power</h4>
+					</div><!-- /col-md-6-->
+				</div><!--/row -->
+				<div class="row of">
+					<div class="col-md-6 col-md-push-6 mt">
+						<img src="assets/img/rippedoff.png" alt="" class="img-responsive aligncenter pt" data-effect="slide-right">
 					</div>
-				</div><!--/col -->
-			</div><!--/row -->
-		</div><!--/container -->
-	</div><!--/header -->
+					<div class="col-md-6 col-md-pull-6 mt">
+						<h3>Stop Getting Ripped Off</h3>
+						<hr>
+						<p>We often accept the high prices that big box retailers give us because we don't have an option to buy directly from manufacturers.</p>
+						<p>The truth is, a pair of bluetooth headphones might cost <strong>$100 in stores</strong>, but can be <strong>as low as $20</strong> when bought directly from manufacturers.</p>
+					</div>
+				</div>
 
-	<div class="container-fluid no-padding">
-		<div class="row no-gutters top-gallery">
-			<div class="col-xs-6 col-sm-3 visible-xs-block visible-sm-block">
-				<img src="assets/img/vr2.jpg" alt="">
-			</div>
-			<div class="col-xs-6 col-sm-3 visible-xs-block visible-sm-block">
-				<img src="assets/img/speaker1.jpg" alt="">
-			</div>
-			<div class="col-xs-6 col-sm-3 visible-xs-block visible-sm-block">
-				<img src="assets/img/speaker3.jpg" alt="">
-			</div>
-			<div class="col-xs-6 col-sm-3 visible-xs-block visible-sm-block">
-				<img src="assets/img/headphones3.jpg" alt="">
-			</div>
-		</div>
-	</div>
+				<div class="row of">
+					<div class="col-md-6 mt">
+						<img src="assets/img/factory.png" alt="" class="img-responsive aligncenter pt" data-effect="slide-left">
+					</div>
+					<div class="col-md-6 mt">
+						<h3>Buy Directly From Manufacturers</h3>
+						<hr>
+						<p><em>So why can't we buy directly from manufacturers?</em></p>
+						<p>The biggest issue is <strong>minimum order quanities</strong>. Factories will only sell products at a low price if you buy a minimum number of units.</p>
+						<p>Big box retailers can afford to do this, but regular folks like us cannot.</p>
+					</div>
+				</div>
 
-	<!-- ********** INTRODUCTION SECTION ********** --> 
-	<div id="intro">
-		<div class="container mtb">
-			<div class="row">
-				<div class="col-md-6 col-md-offset-3 centered">
-					<h2>How it Works</h2>
-					<hr class="aligncenter">
-					<h4>Crowdsourcing Buying Power</h4>
-				</div><!-- /col-md-6-->
-			</div><!--/row -->
-			<div class="row of">
-				<div class="col-md-6 col-md-push-6 mt">
-					<img src="assets/img/rippedoff.png" alt="" class="img-responsive aligncenter pt" data-effect="slide-right">
+				<div class="row of">
+					<div class="col-md-6 col-md-push-6 mt">
+						<img src="assets/img/crowdfund.png" alt="" class="img-responsive aligncenter pt" data-effect="slide-right">
+					</div>
+					<div class="col-md-6 col-md-pull-6 mt">
+						<h3>Crowdfunding Bulk Orders</h3>
+						<hr>
+						<p><strong>Let's make these purchases together.</strong></p>
+						<p>All we have to do is to team up, pool together the money for a minimum order, and buy directly from the manufacturers.</p>
+						<p>We've rented a warehouse for the manufacturers to send the bulk order and then we'll ship your gadgets straight to your doorstep.</p>
+					</div>
 				</div>
-				<div class="col-md-6 col-md-pull-6 mt">
-					<h3>Stop Getting Ripped Off</h3>
-					<hr>
-					<p>We often accept the high prices that big box retailers give us because we don't have an option to buy directly from manufacturers.</p>
-					<p>The truth is, a pair of bluetooth headphones might cost <strong>$100 in stores</strong>, but can be <strong>as low as $20</strong> when bought directly from manufacturers.</p>
-				</div>
+			</div><!--/container -->
+		</div>
+
+		<!-- ********** CALL TO ACTION SECTION ********** --> 
+		<div id="cta">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3">
+						<h2>Get Notified When We Launch!</h2>
+						<hr class="aligncenter">
+						<h1 class="centered"><i class="fa fa-rocket fa-2x"></i></h1>
+						<p>We're going to be launching in mid-November. In the mean time, sign up so you won't miss out on some great deals coming your way!</p>
+						<p class="subscribe-prompt"><span class="tomato">Sign up</span> and join the movement:</p>
+						<form class="cta-subscribe" role="form" action="register.php" method="post" enctype="plain"> 
+		  				<input type="email" name="email" class="subscribe-input" placeholder="yourname@example.com" required>
+							<button class='btn btn-lg btn-tomato subscribe-submit' type="submit">Join Now</button>
+						</form>
+					</div>
+				</div><!--/row -->
+			</div><!--/container -->
+		</div><!--/CTA -->
+
+		<!-- ********** SNEAK PEEK SECTION ********** --> 
+		<div id="preview">
+			<div class="container mtb">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3 centered">
+						<h2>Sneak Peek</h2>
+						<hr class="aligncenter">
+						<h4>Future Website Design Preview</h4>
+					</div><!-- /col-md-6-->
+				</div><!--/row -->
 			</div>
 
-			<div class="row of">
-				<div class="col-md-6 mt">
-					<img src="assets/img/factory.png" alt="" class="img-responsive aligncenter pt" data-effect="slide-left">
-				</div>
-				<div class="col-md-6 mt">
-					<h3>Buy Directly From Manufacturers</h3>
-					<hr>
-					<p><em>So why can't we buy directly from manufacturers?</em></p>
-					<p>The biggest issue is <strong>minimum order quanities</strong>. Factories will only sell products at a low price if you buy a minimum number of units.</p>
-					<p>Big box retailers can afford to do this, but regular folks like us cannot.</p>
-				</div>
+			<div id="card-container" class="cbp cbp-l-grid-work">
+				<div class="cbp-item">
+					<a href="#" class="cbp-caption disable-click" rel="nofollow">
+						<img src="assets/img/vr-blur.jpg" alt="">
+						<div class="cbp-price-info">
+							<div class="cbp-price-original strikethrough">49.95</div>
+							<div class="cbp-price">19.95</div>
+						</div>
+					</a>
+					<div class="card-info">
+						<a href="#" class="card-title disable-click" rel="nofollow"><span class="tomato">60% Off!</span> Awesome Cool Product</a>
+						<div class="card-desc">This is a sentence about this amazing product. A product that has been tested by TrueChimp to be of great quality and value!</div>
+						<div class="progress-above-info">
+							<div class="progress-desc"><span class="tomato"><strong><span class="card-pledged-num">243</span></strong><br>people have pledged</span></div>
+							<div class="progress-left"><strong><span class="card-pledges-left">257</span></strong><br>left to go</div>	
+						</div>
+						<div class="progress-bar"><div class="progress-bar-fill" style="width:49%"></div></div>
+						<div class="card-bottom-info">
+							<div class="progress-days-left"><i class="ion-clock"></i>30 days left</div>
+							<div class="progress-goal"><i class="ion-pinpoint"></i>Goal: 500</div>	
+						</div>
+					</div>
+				</div> <!-- /cbp-item -->
+				<div class="cbp-item">
+					<a href="#" class="cbp-caption disable-click" rel="nofollow">
+						<img src="assets/img/speaker2-blur.jpg" alt="">
+						<div class="cbp-price-info">
+							<div class="cbp-price-original strikethrough">99.95</div>
+							<div class="cbp-price">29.95</div>
+						</div>
+					</a>
+					<div class="card-info">
+						<a href="#" class="card-title disable-click" rel="nofollow"><span class="tomato">70% Off!</span> Awesome Cool Product</a>
+						<div class="card-desc">This is a sentence about this amazing product. A product that has been tested by TrueChimp to be of great quality and value!</div>
+						<div class="progress-above-info">
+							<div class="progress-desc"><span class="tomato"><strong><span class="card-pledged-num">72</span></strong><br>people have pledged</span></div>
+							<div class="progress-left"><strong><span class="card-pledges-left">48</span></strong><br>left to go</div>	
+						</div>
+						<div class="progress-bar"><div class="progress-bar-fill" style="width:60%"></div></div>
+						<div class="card-bottom-info">
+							<div class="progress-days-left"><i class="ion-clock"></i>23 days left</div>
+							<div class="progress-goal"><i class="ion-pinpoint"></i>Goal: 120</div>	
+						</div>
+					</div>
+				</div> <!-- /cbp-item -->
+				<div class="cbp-item">
+					<a href="#" class="cbp-caption disable-click" rel="nofollow">
+						<img src="assets/img/headphones-blur.jpg" alt="">
+						<div class="cbp-price-info">
+							<div class="cbp-price-original strikethrough">79.95</div>
+							<div class="cbp-price">19.95</div>
+						</div>
+					</a>
+					<div class="card-info">
+						<a href="#" class="card-title disable-click" rel="nofollow"><span class="tomato">75% Off!</span> Awesome Cool Product</a>
+						<div class="card-desc">This is a sentence about this amazing product. A product that has been tested by TrueChimp to be of great quality and value!</div>
+						<div class="progress-above-info">
+							<div class="progress-desc"><span class="tomato"><strong><span class="card-pledged-num">223</span></strong><br>people have pledged</span></div>
+							<div class="progress-left"><strong><span class="card-pledges-left">27</span></strong><br>left to go</div>	
+						</div>
+						<div class="progress-bar"><div class="progress-bar-fill" style="width:89.2%"></div></div>
+						<div class="card-bottom-info">
+							<div class="progress-days-left"><i class="ion-clock"></i>16 days left</div>
+							<div class="progress-goal"><i class="ion-pinpoint"></i>Goal: 250</div>	
+						</div>
+					</div>
+				</div> <!-- /cbp-item -->
+				<div class="cbp-item">
+					<a href="#" class="cbp-caption disable-click" rel="nofollow">
+						<img src="assets/img/speaker1-blur.jpg" alt="">
+						<div class="cbp-price-info">
+							<div class="cbp-price-original strikethrough">49.95</div>
+							<div class="cbp-price">29.95</div>
+						</div>
+					</a>
+					<div class="card-info">
+						<a href="#" class="card-title disable-click" rel="nofollow"><span class="tomato">40% Off!</span> Awesome Cool Product</a>
+						<div class="card-desc">This is a sentence about this amazing product. A product that has been tested by TrueChimp to be of great quality and value!</div>
+						<div class="progress-above-info">
+							<div class="progress-desc"><span class="tomato"><strong><span class="card-pledged-num">Funded!</span></strong><br>by 200 awesome people</span></div>
+						</div>
+						<div class="progress-bar"><div class="progress-bar-fill" style="width:100%"></div></div>
+						<div class="card-bottom-info">
+							<div class="progress-days-left"><i class="ion-clock"></i>9 days left</div>
+							<div class="progress-goal"><i class="ion-pinpoint"></i>Goal: 200</div>	
+						</div>
+					</div>
+				</div> <!-- /cbp-item -->
 			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3 centered">
+						<p class="small">The prices and pictures above are for illustrative purposes only.</p>
+					</div><!-- /col-md-6-->
+				</div><!--/row -->
+			</div>
+		</div>
 
-			<div class="row of">
-				<div class="col-md-6 col-md-push-6 mt">
-					<img src="assets/img/crowdfund.png" alt="" class="img-responsive aligncenter pt" data-effect="slide-right">
+		<!-- ********** FAQ SECTION ********** --> 
+		<div id="faq">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3 centered">
+						<h2>Frequently Asked Questions</h2>
+						<hr class="aligncenter">
+						<h4>Let's clear up a few things!</h4>
+					</div><!-- /col-md-6-->
+				</div><!--/row -->
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2">
+						<div id="js-grid-faq" class="cbp cbp-l-grid-faq">
+							<div class="cbp-item">
+								<div class="cbp-caption">
+									<div class="cbp-caption-defaultWrap">
+										<i class="fa fa-question-circle"></i> I'm still confused. Can you explain TrueChimp to me step-by-step?
+									</div>
+									<div class="cbp-caption-activeWrap">
+										<div class="cbp-l-caption-body">
+											<p>Sure. The whole concept is really quite simple:</p>
+											<p><strong>Step 1:</strong> Sign up and every week you will receive an email featuring a cool gadget that we've tested and reviewed for you.</p>
+											<p><strong>Step 2:</strong> Once enough people pledge their money, we make the bulk order with the manufacturers and they send it over to our warehouse.</p>
+											<p><strong>Step 3:</strong> From there, we ship it straight to your doorstep so you can enjoy cool gadgets without spending a fortune!</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cbp-item">
+								<div class="cbp-caption">
+									<div class="cbp-caption-defaultWrap">
+										<i class="fa fa-question-circle"></i> How can I trust the quality of the products?
+									</div>
+									<div class="cbp-caption-activeWrap">
+										<div class="cbp-l-caption-body">
+											<p>Every single product is personally tested by one of us in-house. You can be sure that anything we put up, we've actually tried to use it for a week or more.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cbp-item">
+								<div class="cbp-caption">
+									<div class="cbp-caption-defaultWrap">
+										<i class="fa fa-question-circle"></i> How long do I have to wait until I receive the product?
+									</div>
+									<div class="cbp-caption-activeWrap">
+										<div class="cbp-l-caption-body">
+											<p>Once a product campaign deadline is reached, we take a look to see if the product has the minimum number of pledges.</p>
+											<p>If so, we immediately make the order with the manufacturers. An estimate of the time between the order and the product arriving at your door is listed on the product page.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div><!--/js-grid-faq -->
+					</div>
 				</div>
-				<div class="col-md-6 col-md-pull-6 mt">
-					<h3>Crowdfunding Bulk Orders</h3>
-					<hr>
-					<p><strong>Let's make these purchases together.</strong></p>
-					<p>All we have to do is to team up, pool together the money for a minimum order, and buy directly from the manufacturers.</p>
-					<p>We've rented a warehouse for the manufacturers to send the bulk order and then we'll ship your gadgets straight to your doorstep.</p>
-				</div>
-			</div>
-		</div><!--/container -->
-	</div>
-
-	<!-- ********** CARDS SECTION ********** --> 
-	<div class="container mtb">
-		<div class="row">
-			<div class="col-md-6 col-md-offset-3 centered">
-				<h2>Ready to Go!</h2>
-				<hr class="aligncenter">
-				<h4>Pledge Your Money to Get Cool Gadgets</h4>
-			</div><!-- /col-md-6-->
-		</div><!--/row -->
-	</div>
-
-	<div id="card-container" class="cbp cbp-l-grid-work">
-		<div class="cbp-item">
-			<a href="#" class="cbp-caption" rel="nofollow">
-				<img src="assets/img/headphones3.jpg" alt="">
-				<div class="cbp-price-info">
-					<div class="cbp-price-original strikethrough">49.95</div>
-					<div class="cbp-price">19.95</div>
-				</div>
-			</a>
-			<div class="card-info">
-				<a href="#" class="card-title" rel="nofollow">VR Goggles</a>
-				<div class="card-desc">This is a sentence about this amazing product. It should entice people to click on it and learn more.</div>
-				<div class="progress-above-info">
-					<div class="progress-desc"><span class="tomato"><strong><span class="card-pledged-num">243</span></strong><br>people have pledged</span></div>
-					<div class="progress-left"><strong><span class="card-pledges-left">257</span></strong><br>left to go</div>	
-				</div>
-				<div class="progress-bar"><div class="progress-bar-fill" style="width:49%"></div></div>
-				<div class="card-bottom-info">
-					<div class="progress-days-left"><i class="ion-clock"></i>23 days left</div>
-					<div class="progress-goal"><i class="ion-pinpoint"></i>Goal: 500</span></div>	
-				</div>
-			</div>
+			</div><!--/container -->
 		</div>
-		<div class="cbp-item">
-			<a href="#" class="cbp-caption" rel="nofollow">
-				<img src="assets/img/vr2.jpg" alt="">
-				<div class="cbp-price-info">
-					<div class="cbp-price-original strikethrough">399.95</div>
-					<div class="cbp-price">199.95</div>
-				</div>
-			</a>
-			<div class="card-info">
-				<a href="#" class="card-title" rel="nofollow">VR Goggles</a>
-				<div class="card-desc">This is a sentence about this amazing product. It should entice people to click on it and learn more.</div>
-				<div class="progress-above-info">
-					<div class="progress-desc"><span class="tomato"><strong><span class="card-pledged-num">243</span></strong><br>people have pledged</span></div>
-					<div class="progress-left"><strong><span class="card-pledges-left">257</span></strong><br>left to go</div>	
-				</div>
-				<div class="progress-bar"><div class="progress-bar-fill" style="width:49%"></div></div>
-				<div class="card-bottom-info">
-					<div class="progress-days-left"><i class="ion-clock"></i>23 days left</div>
-					<div class="progress-goal"><i class="ion-pinpoint"></i>Goal: 500</span></div>	
-				</div>
-			</div>
-		</div>
-		<div class="cbp-item">
-			<a href="#" class="cbp-caption" rel="nofollow">
-				<img src="assets/img/speaker1.jpg" alt="">
-				<div class="cbp-price-info">
-					<div class="cbp-price-original strikethrough">149.95</div>
-					<div class="cbp-price">49.95</div>
-				</div>
-			</a>
-			<div class="card-info">
-				<a href="#" class="card-title" rel="nofollow">VR Goggles</a>
-				<div class="card-desc">This is a sentence about this amazing product. It should entice people to click on it and learn more.</div>
-				<div class="progress-above-info">
-					<div class="progress-desc"><span class="tomato"><strong><span class="card-pledged-num">243</span></strong><br>people have pledged</span></div>
-					<div class="progress-left"><strong><span class="card-pledges-left">257</span></strong><br>left to go</div>	
-				</div>
-				<div class="progress-bar"><div class="progress-bar-fill" style="width:49%"></div></div>
-				<div class="card-bottom-info">
-					<div class="progress-days-left"><i class="ion-clock"></i>23 days left</div>
-					<div class="progress-goal"><i class="ion-pinpoint"></i>Goal: 500</span></div>	
-				</div>
-			</div>
-		</div>
-		<div class="cbp-item">
-			<a href="#" class="cbp-caption" rel="nofollow">
-				<img src="assets/img/speaker3.jpg" alt="">
-				<div class="cbp-price-info">
-					<div class="cbp-price-original strikethrough">49.95</div>
-					<div class="cbp-price">19.95</div>
-				</div>
-			</a>
-			<div class="card-info">
-				<a href="#" class="card-title" rel="nofollow">VR Goggles</a>
-				<div class="card-desc">This is a sentence about this amazing product. It should entice people to click on it and learn more.</div>
-				<div class="progress-above-info">
-					<div class="progress-desc"><span class="tomato"><strong><span class="card-pledged-num">243</span></strong><br>people have pledged</span></div>
-					<div class="progress-left"><strong><span class="card-pledges-left">257</span></strong><br>left to go</div>	
-				</div>
-				<div class="progress-bar"><div class="progress-bar-fill" style="width:49%"></div></div>
-				<div class="card-bottom-info">
-					<div class="progress-days-left"><i class="ion-clock"></i>23 days left</div>
-					<div class="progress-goal"><i class="ion-pinpoint"></i>Goal: 500</span></div>	
-				</div>
-			</div>
-		</div>
-		<div class="cbp-item">
-			<a href="#" class="cbp-caption" rel="nofollow">
-				<img src="assets/img/headphones3.jpg" alt="">
-				<div class="cbp-price-info">
-					<div class="cbp-price-original strikethrough">149.95</div>
-					<div class="cbp-price">49.95</div>
-				</div>
-			</a>
-			<div class="card-info">
-				<a href="#" class="card-title" rel="nofollow">VR Goggles</a>
-				<div class="card-desc">This is a sentence about this amazing product. It should entice people to click on it and learn more.</div>
-				<div class="progress-above-info">
-					<div class="progress-desc"><span class="tomato"><strong><span class="card-pledged-num">243</span></strong><br>people have pledged</span></div>
-					<div class="progress-left"><strong><span class="card-pledges-left">257</span></strong><br>left to go</div>	
-				</div>
-				<div class="progress-bar"><div class="progress-bar-fill" style="width:49%"></div></div>
-				<div class="card-bottom-info">
-					<div class="progress-days-left"><i class="ion-clock"></i>23 days left</div>
-					<div class="progress-goal"><i class="ion-pinpoint"></i>Goal: 500</span></div>	
-				</div>
-			</div>
-		</div>
-		<div class="cbp-item">
-			<a href="#" class="cbp-caption" rel="nofollow">
-				<img src="assets/img/lock.jpg" alt="">
-				<div class="cbp-price-info">
-					<div class="cbp-price-original strikethrough">49.95</div>
-					<div class="cbp-price">19.95</div>
-				</div>
-			</a>
-			<div class="card-info">
-				<a href="#" class="card-title" rel="nofollow">VR Goggles</a>
-				<div class="card-desc">This is a sentence about this amazing product. It should entice people to click on it and learn more.</div>
-				<div class="progress-above-info">
-					<div class="progress-desc"><span class="tomato"><strong><span class="card-pledged-num">243</span></strong><br>people have pledged</span></div>
-					<div class="progress-left"><strong><span class="card-pledges-left">257</span></strong><br>left to go</div>	
-				</div>
-				<div class="progress-bar"><div class="progress-bar-fill" style="width:49%"></div></div>
-				<div class="card-bottom-info">
-					<div class="progress-days-left"><i class="ion-clock"></i>23 days left</div>
-					<div class="progress-goal"><i class="ion-pinpoint"></i>Goal: 500</span></div>	
-				</div>
-			</div>
-		</div>
-		<div class="cbp-item">
-			<a href="#" class="cbp-caption" rel="nofollow">
-				<img src="assets/img/planetarium.jpg" alt="">
-				<div class="cbp-price-info">
-					<div class="cbp-price-original strikethrough">149.95</div>
-					<div class="cbp-price">49.95</div>
-				</div>
-			</a>
-			<div class="card-info">
-				<a href="#" class="card-title" rel="nofollow">VR Goggles</a>
-				<div class="card-desc">This is a sentence about this amazing product. It should entice people to click on it and learn more.</div>
-				<div class="progress-above-info">
-					<div class="progress-desc"><span class="tomato"><strong><span class="card-pledged-num">243</span></strong><br>people have pledged</span></div>
-					<div class="progress-left"><strong><span class="card-pledges-left">257</span></strong><br>left to go</div>	
-				</div>
-				<div class="progress-bar"><div class="progress-bar-fill" style="width:49%"></div></div>
-				<div class="card-bottom-info">
-					<div class="progress-days-left"><i class="ion-clock"></i>23 days left</div>
-					<div class="progress-goal"><i class="ion-pinpoint"></i>Goal: 500</span></div>	
-				</div>
-			</div>
-		</div>
-		<div class="cbp-item">
-			<a href="#" class="cbp-caption" rel="nofollow">
-				<img src="assets/img/lock.jpg" alt="">
-				<div class="cbp-price-info">
-					<div class="cbp-price-original strikethrough">49.95</div>
-					<div class="cbp-price">19.95</div>
-				</div>
-			</a>
-			<div class="card-info">
-				<a href="#" class="card-title" rel="nofollow">VR Goggles</a>
-				<div class="card-desc">This is a sentence about this amazing product. It should entice people to click on it and learn more.</div>
-				<div class="progress-above-info">
-					<div class="progress-desc"><span class="tomato"><strong><span class="card-pledged-num">243</span></strong><br>people have pledged</span></div>
-					<div class="progress-left"><strong><span class="card-pledges-left">257</span></strong><br>left to go</div>	
-				</div>
-				<div class="progress-bar"><div class="progress-bar-fill" style="width:49%"></div></div>
-				<div class="card-bottom-info">
-					<div class="progress-days-left"><i class="ion-clock"></i>23 days left</div>
-					<div class="progress-goal"><i class="ion-pinpoint"></i>Goal: 500</span></div>	
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- ********** HOW IT WORKS SECTION ********** --> 
-	<div id="g">
+	
+		<!-- ********** END SECTION ********** --> 
 		<div class="container">
-			<div class="row">
-				<div class="col-md-6 col-md-offset-3 centered">
-					<h2>How it Works</h2>
-					<hr class="aligncenter">
-					<h4>Crowdsourcing Buying Power</h4>
-				</div><!-- /col-md-6-->
-			</div><!--/row -->
-			
 			<div class="row mtb">
-				<div class="col-md-4 mt centered">
-					<div class="circle-icon ion-android-search"></div>
-					<h3 class="steps-title tomato">1. Discover Cool Products</h3>
-					<p class="steps-text">Sign up and every week you will receive an email featuring a cool gadget that we've tested and reviewed for you. </p>
-				</div><!--/col-md-4-->
-				<div class="col-md-4 mt centered">
-					<div class="circle-icon ion-android-people">
-					</div>
-					<h3 class="steps-title tomato">2. Join Others in Pledging</h3>
-					<p class="steps-text">Once enough people pledge their money, we make the bulk order with the manufacturers and they send it over to our warehouse.</p>
-				</div><!--/col-md-4-->
-				<div class="col-md-4 mt centered">
-					<div class="circle-icon ion-android-contact">
-					</div>
-					<h3 class="steps-title tomato">3. Get Cool Gadgets!</h3>
-					<p class="steps-text">From there, we ship it straight to your doorstep so you can enjoy cool gadgets without spending a fortune!</p>
-				</div><!--/col-md-4-->
-			</div><!--/row -->
-		</div><!--/container -->
-	</div>
-
-	<!-- ********** CALL TO ACTION SECTION ********** --> 
-	<div id="cta">
-		<div class="container">
-			<div class="row">
-				<h2>That's it!</h2>
-			</div><!--/row -->
-		</div><!--/container -->
-	</div><!--/CTA -->
-
-	<!-- ********** TESTIMONIAL SECTION ********** --> 
-	<div id="testimonial">
-		<div class="container">
-			<div class="row mt">
-				<div class="col-lg-8 col-lg-offset-2 centered">
-				    <!-- Carousel
-				    ================================================== -->
-				    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-				      <div class="carousel-inner">
-				        <div class="item active">
-				          <img src="assets/img/ui-01.jpg" class="img-circle aligncenter" width="120" alt="First slide">
-				          <h3>Mark Turin</h3>
-				          <hr class="aligncenter">
-				          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-				        </div>
-				        <div class="item">
-				          <img src="assets/img/ui-02.jpg" class="img-circle aligncenter" width="120"  alt="Second slide">
-				          <h3>Sarah Schmidt</h3>
-				          <hr class="aligncenter">
-				          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-				        </div>
-				        <div class="item">
-				          <img src="assets/img/ui-03.jpg" width="120" class="img-circle aligncenter" alt="Third slide">
-				          <h3>Phil Carsons</h3>
-				          <hr class="aligncenter">
-				          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-				        </div>
-				      </div>
-				    </div><!-- /.carousel -->
-				</div><!--/col-lg-8 -->
-			</div><!--/row -->
-		</div><!--/container -->
-	</div><!--/testimonial -->
-	
-	
-	<!-- ********** REGISTER SECTION ********** --> 
-	<div id="g">
-		<div class="container">
-			<div class="row mt">
 				<div class="col-md-6 col-md-offset-3 centered">
-					<h2>Stay In Contact</h2>
+					<a href="mailto:info@truechimp.com"><i class="fa fa-envelope"></i>Email Us</a>
 					<hr class="aligncenter">
-					<h4>We Are Social People</h4>
-				</div><!-- /col-md-6-->
-			</div><!--/row -->
-			
-			<div class="row">
-				<div class="col-md-6 col-md-offset-3 mt centered">
-					<form role="form" action="register.php" method="post" enctype="plain"> 
-	    				<input type="email" name="email" class="subscribe-input" placeholder="Enter your e-mail address..." required>
-						<button class='btn btn-lg btn-tomato subscribe-submit' type="submit">Subscribe</button>
-					</form>
+					<p>TrueChimp.com | Copyright 2015</p>
 				</div>
 			</div><!--/row -->
 		</div><!--/container -->
-	</div><!--/g -->
-	
-	<!-- ********** END SECTION ********** --> 
-	<div class="container">
-		<div class="row mtb">
-			<div class="col-md-6 col-md-offset-3 centered">
-				<p class="text28">
-					<a href="#"><i class="ion-social-twitter"></i></a>
-					<a href="#"><i class="ion-social-instagram"></i></a>
-					<a href="#"><i class="ion-social-facebook"></i></a>
-				</p>
-				<hr class="aligncenter">
-				<p>LandingSumo.com | Copyright 2014</p>
-			</div>
-		</div><!--/row -->
-	</div><!--/container -->
 	
     <!-- Bootstrap core JavaScript
     ================================================== -->
