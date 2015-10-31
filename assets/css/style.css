@@ -14,6 +14,11 @@
 	0. CUSTOM STYLES
 ################################################################# */
 
+.invert-bar {
+	background-color: tomato;
+	color: white;
+}
+
 .disable-click {
    pointer-events: none;
 }
@@ -141,6 +146,7 @@ body {
 .centered {text-align: center}
 .mt {margin-top: 50px;}
 .mt2 {margin-top: 100px;}
+.mt-half {margin-top: 25px;}
 .mb {margin-bottom: 50px;}
 .mb2 {margin-bottom: 100px;}
 .mb-half {margin-bottom: 25px;}
@@ -499,10 +505,12 @@ input {
 	font-size: 18px;
 	font-weight: 700;
 	margin-bottom: 6px;
+	min-height: 52px;
 }
 
 #card-container .card-info .card-desc {
 	margin-bottom: 12px;
+	min-height: 100px;
 }
 
 #card-container .cbp-price-info {
@@ -609,6 +617,10 @@ input {
 .row.no-gutters > [class*=" col-"] {
   padding-right: 0;
   padding-left: 0;
+}
+
+.top-gallery {
+	position: relative;
 }
 
 .top-gallery img {
