@@ -11,8 +11,8 @@ $(document).ready( function() {
   $(document).scroll(function(){
     scrollPos = $(window).scrollTop();
     bar = $('.navbar')
-    startFadePos = 200
-    endFadePos = 600
+    startFadePos = 20
+    endFadePos = 200
     if (scrollPos > startFadePos) {
       factor = (scrollPos - startFadePos) / (endFadePos - startFadePos)
       bar.css('background-color', 'rgba(60,60,60,' + factor + ')')

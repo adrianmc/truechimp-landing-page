@@ -42,8 +42,10 @@
         </a>
       </div>
       <div id="navbar" class="collapse navbar-collapse">
-        <ul class="nav navbar-nav">
-          
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">About</a></li>
+          <li><a href="#">How it Works</a></li>
+          <li><a href="#">Sign Up</a></li>
         </ul>
       </div><!--/.nav-collapse -->
     </div>
@@ -53,26 +55,58 @@
 	<div id="h">
 		<div class="mask"></div>
 		<div class="container">
-			<div class="row centered mtb">
-				<h1>Cool Gadgets.<br/>Unbeatable Prices.</h1>
-				<h3>Bringing you the best deals by <span class="tomato">crowdfunding</span> bulk orders.</h3>
-				<div class="btn btn-tomato btn-learn-more">Learn More</div>
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-0 mt2">
+					<h1>Cool Gadgets.<br/>Unbeatable Prices.</h1>
+					<h3>TrueChimp is a <span class="tomato">crowd-buying portal</span> for cool gadgets at factory level prices. We buy directly from manufacturers to get you the <span class="tomato">best deals</span> on the internet.</h3>
+					<h3 class="subscribe-prompt"><span class="tomato">Sign up</span> to get great deals today:</h3>
+					<form class="cta-subscribe" role="form" action="register.php" method="post" enctype="plain"> 
+	    				<input type="email" name="email" class="subscribe-input" placeholder="yourname@example.com" required>
+						<button class='btn btn-lg btn-tomato subscribe-submit' type="submit">Sign Up</button>
+					</form>
+					<!-- <h3>Bringing you the best deals by <span class="tomato">crowdfunding</span> bulk orders.</h3> -->
+
+					<!-- <div class="btn btn-tomato btn-learn-more">Learn More</div> -->
+					<!-- <form action="">
+						<input type="email" name="email" class="subscribe-input" placeholder="Enter your e-mail address..." required>
+						<button class='btn btn-lg btn-tomato subscribe-submit' type="submit">Subscribe</button>
+					</form> -->
+				</div>
+
+				<div class="col-lg-5 visible-lg-block header-photos">
+					<div class="row">
+						<div class="col-md-6 no-padding">
+							<img src="assets/img/vr-dark.jpg" alt="" width="100%">
+						</div>
+						<div class="col-md-6 no-padding">
+							<img src="assets/img/speaker-dark.jpg" alt="" width="100%">
+						</div>	
+					</div>
+					<div class="row">
+						<div class="col-md-6 no-padding">
+							<img src="assets/img/speaker2-dark.jpg" alt="" width="100%">
+						</div>
+						<div class="col-md-6 no-padding">
+							<img src="assets/img/headphones-dark.jpg" alt="" width="100%">
+						</div>	
+					</div>
+				</div><!--/col -->
 			</div><!--/row -->
 		</div><!--/container -->
-	</div><!--/header -->	  
+	</div><!--/header -->
 
 	<div class="container-fluid no-padding">
 		<div class="row no-gutters top-gallery">
-			<div class="col-xs-6 col-sm-3">
+			<div class="col-xs-6 col-sm-3 visible-xs-block visible-sm-block">
 				<img src="assets/img/vr2.jpg" alt="">
 			</div>
-			<div class="col-xs-6 col-sm-3">
+			<div class="col-xs-6 col-sm-3 visible-xs-block visible-sm-block">
 				<img src="assets/img/speaker1.jpg" alt="">
 			</div>
-			<div class="col-xs-6 col-sm-3">
+			<div class="col-xs-6 col-sm-3 visible-xs-block visible-sm-block">
 				<img src="assets/img/speaker3.jpg" alt="">
 			</div>
-			<div class="col-xs-6 col-sm-3">
+			<div class="col-xs-6 col-sm-3 visible-xs-block visible-sm-block">
 				<img src="assets/img/headphones3.jpg" alt="">
 			</div>
 		</div>
@@ -80,7 +114,14 @@
 
 	<!-- ********** INTRODUCTION SECTION ********** --> 
 	<div id="intro">
-		<div class="container mb">
+		<div class="container mtb">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3 centered">
+					<h2>How it Works</h2>
+					<hr class="aligncenter">
+					<h4>Crowdsourcing Buying Power</h4>
+				</div><!-- /col-md-6-->
+			</div><!--/row -->
 			<div class="row of">
 				<div class="col-md-6 col-md-push-6 mt">
 					<img src="assets/img/rippedoff.png" alt="" class="img-responsive aligncenter pt" data-effect="slide-right">
@@ -120,16 +161,6 @@
 			</div>
 		</div><!--/container -->
 	</div>
-
-	<!-- ********** CALL TO ACTION SECTION ********** --> 
-	<div id="cta">
-		<div class="container">
-			<div class="row">
-				<!-- <h2>TrueChimp is a crowd-buying portal for cool gadgets at factory level prices.</h2> -->
-				<h1>Sign Up</h1>
-			</div><!--/row -->
-		</div><!--/container -->
-	</div><!--/CTA -->
 
 	<!-- ********** CARDS SECTION ********** --> 
 	<div class="container mtb">
@@ -362,129 +393,6 @@
 			</div><!--/row -->
 		</div><!--/container -->
 	</div><!--/CTA -->
-	
-	<!-- ********** HOW IT WORKS SECTION ********** --> 
-	<div id="g">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 col-md-offset-3 centered">
-					<h2>Step Two</h2>
-					<hr class="aligncenter">
-					<h4>Bringing You the Bacon</h4>
-				</div><!-- /col-md-6-->
-			</div><!--/ row-->
-			
-			<div class="row mt">
-				<div class="col-md-4">
-					<h4 class="green">STEP 1</h4>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-					<h4 class="green mt">STEP 2</h4>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-				</div><!--/col-md-4-->
-				<div class="col-md-4">
-					<img src="assets/img/item.png" alt="" class="img-responsive aligncenter" data-effect="slide-bottom">
-				</div><!--/col-md-4-->
-				<div class="col-md-4">
-					<h4 class="green">STEP 3</h4>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-					<h4 class="green mt">STEP 4</h4>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-				</div><!--/col-md-4-->
-			</div><!--/row -->
-			
-			<div class="row mt">
-				<div class="col-md-4 col-md-offset-4 centered">
-					<button class="btn btn-lg btn-green">Download Our PDF</button>
-				</div><!--/col-md-4-->
-			</div><!--/row -->
-		</div><!--/container -->
-	</div><!--/G -->
-	
-	<!-- ********** CALL TO ACTION SECTION ********** --> 
-	<div id="cta">
-		<div class="container">
-			<div class="row">
-				<h2>More than <b>65%</b> of users check their mail on a mobile device.</h2>
-				<h2>In 2014, <b>40%</b> made a purchase through their smartphone.</h2>
-			</div><!--/row -->
-		</div><!--/container -->
-	</div><!--/CTA -->
-
-	<!-- ********** FEATURES SECTION - Part 1 ********** --> 
-	<div class="container mt">
-		<div class="row">
-			<div class="col-md-4 centered">
-				<i class="ion-compass green big"></i>
-				<p class="green">Don't miss your opportunity</p>
-				<p class="text16">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-			</div><!--/col-md-4-->
-			<div class="col-md-4 centered">
-				<i class="ion-disc green big"></i>
-				<p class="green">Save on external devices</p>
-				<p class="text16">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-			</div><!--/col-md-4-->
-			<div class="col-md-4 centered">
-				<i class="ion-earth green big"></i>
-				<p class="green">Work in every place</p>
-				<p class="text16">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-			</div><!--/col-md-4-->
-		</div><!--/row -->
-		
-		<div class="row mt">
-			<div class="col-md-12">
-				<img src="assets/img/display.jpg" class="img-responsive aligncenter" alt="" data-effect="slide-bottom">
-			</div><!--/col-md-12-->
-		</div><!--/row -->
-	</div><!--/container -->
-
-	<!-- ********** FEATURES SECTION - Part 2 ********** --> 
-	<div id="g">
-		<div class="container">
-			<div class="row mt">
-				<div class="col-md-6 col-md-offset-3 centered">
-					<h2>App Features</h2>
-					<hr class="aligncenter">
-					<h4>What You Need To Know</h4>
-				</div><!-- /col-md-6-->
-			</div><!--/row -->
-			
-			<div class="row mt">
-				<div class="col-md-4 centered">
-					<i class="ion-cube green big"></i>
-					<p class="green">All Included in a big package</p>
-					<p class="text16">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-				</div><!--/col-md-4-->
-				<div class="col-md-4 centered">
-					<i class="ion-document-text green big"></i>
-					<p class="green">Complete documentation</p>
-					<p class="text16">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-				</div><!--/col-md-4-->
-				<div class="col-md-4 centered">
-					<i class="ion-email green big"></i>
-					<p class="green">Free email support</p>
-					<p class="text16">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-				</div><!--/col-md-4-->
-			</div><!--/row -->
-			
-			<div class="row mt">
-				<div class="col-md-4 centered">
-					<i class="ion-eye green big"></i>
-					<p class="green">Retina device ready</p>
-					<p class="text16">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-				</div><!--/col-md-4-->
-				<div class="col-md-4 centered">
-					<i class="ion-fireball green big"></i>
-					<p class="green">Hot trends used</p>
-					<p class="text16">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-				</div><!--/col-md-4-->
-				<div class="col-md-4 centered">
-					<i class="ion-heart green big"></i>
-					<p class="green">Crafted with love</p>
-					<p class="text16">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-				</div><!--/col-md-4-->
-			</div><!--/row -->
-		</div><!--/container -->
-	</div><!--/g -->
 
 	<!-- ********** TESTIMONIAL SECTION ********** --> 
 	<div id="testimonial">
@@ -536,7 +444,7 @@
 				<div class="col-md-6 col-md-offset-3 mt centered">
 					<form role="form" action="register.php" method="post" enctype="plain"> 
 	    				<input type="email" name="email" class="subscribe-input" placeholder="Enter your e-mail address..." required>
-						<button class='btn btn-lg btn-green subscribe-submit' type="submit">Subscribe</button>
+						<button class='btn btn-lg btn-tomato subscribe-submit' type="submit">Subscribe</button>
 					</form>
 				</div>
 			</div><!--/row -->

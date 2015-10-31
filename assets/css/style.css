@@ -14,6 +14,10 @@
 	0. CUSTOM STYLES
 ################################################################# */
 
+.header-bg-items {
+  position: absolute;
+}
+
 .cbp-caption-activeWrap * {
 	color: white;
 	padding: 0 20px;
@@ -116,6 +120,11 @@ body {
 	border: 0px;
 }
 
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+	color: white;
+	background-color: transparent;
+}
+
 .alignleft { float: left; }
 .alignright { float: right; }
 .aligncenter {
@@ -126,7 +135,9 @@ body {
 }
 .centered {text-align: center}
 .mt {margin-top: 50px;}
+.mt2 {margin-top: 100px;}
 .mb {margin-bottom: 50px;}
+.mb2 {margin-bottom: 100px;}
 .mtb {margin-top: 50px; margin-bottom: 50px;}
 .mtb2 { margin-top: 100px; margin-bottom: 100px;}
 .pt {padding-top: 50px;}
@@ -240,17 +251,22 @@ h4 {
 
 /* HEADER SECTION */
 #h {
-	background: url(../img/header.jpg) no-repeat center center fixed;
+	background: url(../img/header2.jpg) no-repeat center center fixed;
 	/*background: #12a5f4;*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-	padding-top: 30px;
-	text-align: center;
+	/*padding-top: 30px;*/
+	/*text-align: center;*/
 	/*min-height: 480px;*/
 	width: 100%;
 	position: relative;
+}
+
+.header-photos {
+	right: -48px;
+	height: 100%;
 }
 
 @media (min-width: 768px) {
@@ -292,11 +308,11 @@ h4 {
 
 @media (min-width: 768px) {
 	#h h1 {
-		font-size: 70px;
+		font-size: 48px;
 		font-weight: 300;		
 	}
 	#h h3 {
-		font-size: 24px;
+		font-size: 18px;
 	}
 }
 
@@ -389,15 +405,42 @@ input {
 	transition: background-color 0.2s;
 }
 
+.cta-subscribe {
+	margin-bottom: 48px;
+}
+
+.cta-subscribe, .subscribe-prompt {
+	text-align: center;
+}
+
 .subscribe-input {
-	float: left;
-	width: 70%;
-	text-align: left;
-	margin-right: 2px;
+	width: 90%;
+	min-height: 46px;
 }
 
 .subscribe-submit {
 	right: 0;
+	vertical-align: top;
+}
+
+@media (min-width: 480px) {
+
+	.cta-subscribe {
+		margin-bottom: 36px;
+	}
+
+	.cta-subscribe, .subscribe-prompt {
+		text-align: left;
+	}
+
+	.subscribe-input {
+		width: 70%;
+		margin-right: 12px;
+	}
+
+	.subscribe-submit {
+	}
+	
 }
 
 /*Overflow Hidden*/
@@ -540,7 +583,7 @@ input {
 	3. NO GUTTER GRID
 ################################################################# */
 
-.container-fluid.no-padding {
+.no-padding {
 	padding: 0;
 }
 
