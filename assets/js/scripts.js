@@ -1,4 +1,7 @@
 $(document).ready( function() {
+
+  // Initializing tooltips
+  $('[data-toggle="tooltip"]').tooltip(); 
   
   $('.intro-click').click(function(){
     $('html, body').animate({
