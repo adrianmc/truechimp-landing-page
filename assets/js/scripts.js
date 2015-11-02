@@ -2,7 +2,7 @@ $(document).ready( function() {
   
   $('.intro-click').click(function(){
     $('html, body').animate({
-      scrollTop: $('#intro').offset().top - 100
+      scrollTop: $('#intro').offset().top - 50
     }, 1000);
   });
   $('.cta-click').click(function(){
