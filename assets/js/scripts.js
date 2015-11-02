@@ -10,9 +10,9 @@ $(document).ready( function() {
       scrollTop: $('#cta').offset().top - 50
     }, 1000);
   });
-  $('.preview-click').click(function(){
+  $('.explore-click').click(function(){
     $('html, body').animate({
-      scrollTop: $('#preview').offset().top - 100
+      scrollTop: $('#explore').offset().top - 75
     }, 1000);
   });
   $('.faq-click').click(function(){
