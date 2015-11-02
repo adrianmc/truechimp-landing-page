@@ -430,7 +430,7 @@ input {
 	padding: 11px 30px 12px;
 	border: none;
 	margin-bottom: 10px;
-	background-color: #e9f0f2;
+	/*background-color: #e9f0f2;*/
 	-webkit-transition: background-color 0.2s;
 	transition: background-color 0.2s;
 }
