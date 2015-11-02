@@ -385,10 +385,6 @@ h4 {
 	color: white;
 }
 
-#cta input {
-	color: #5a5a5a;
-}
-
 /* FAQ SECTION */
 
 #faq {
@@ -450,9 +446,11 @@ input {
 .subscribe-input {
 	width: 90%;
 	min-height: 46px;
+	color: #5a5a5a;
 }
 
 .subscribe-submit {
+	color: white;
 	right: 0;
 	vertical-align: top;
 }
