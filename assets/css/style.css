@@ -325,6 +325,7 @@ h4 {
 	}
 	#h h3 {
 		font-size: 18px;
+		line-height: 22px;
 	}
 }
 
@@ -386,6 +387,9 @@ h4 {
 	background: #f7f8fa;
 }
 
+#faq p {
+	font-size: 16px;
+}
 
 #testimonial {
 	padding-bottom: 50px;
