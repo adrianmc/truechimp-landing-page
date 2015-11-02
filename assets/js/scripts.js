@@ -5,9 +5,9 @@ $(document).ready( function() {
       scrollTop: $('#intro').offset().top - 50
     }, 1000);
   });
-  $('.cta-click').click(function(){
+  $('.contact-click').click(function(){
     $('html, body').animate({
-      scrollTop: $('#cta').offset().top - 50
+      scrollTop: $('#contact').offset().top - 50
     }, 1000);
   });
   $('.explore-click').click(function(){
