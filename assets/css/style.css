@@ -13,6 +13,35 @@
 /*	################################################################
 	0. CUSTOM STYLES
 ################################################################# */
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.carousel-inner > .item > img {
+  width: 100%;
+  margin: auto;
+}
+
+.carousel {
+	max-height: 300px;
+	max-width: 300px;
+}
+
+.photo-gallery .carousel-control.left, .photo-gallery .carousel-control.right {
+	background-image: none;
+}
+
 .sale-data-point-container {
 	margin-bottom: 15px;
 }
@@ -50,10 +79,6 @@ h3.popover-title{
 	background: #ddd;
 	vertical-align: middle;
 	margin-right: 10px;
-}
-
-.photo-gallery {
-	height: 310px;
 }
 
 .price-info-list {

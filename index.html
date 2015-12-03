@@ -76,7 +76,41 @@
 					<!-- <div class="col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-0 mt2"> -->
 					<div class="col-md-4">
 						<div class="photo-gallery">
-							<img src="assets/img/vr.jpg" alt="" class="img-responsive">
+							<div id="myCarousel" class="carousel" data-ride="carousel" data-interval="false">
+							  <!-- Indicators -->
+							  <ol class="carousel-indicators">
+							    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+							    <li data-target="#myCarousel" data-slide-to="1"></li>
+							    <li data-target="#myCarousel" data-slide-to="2"></li>
+							    <li data-target="#myCarousel" data-slide-to="3"></li>
+							  </ol>
+
+							  <!-- Wrapper for slides -->
+							  <div class="carousel-inner" role="listbox">
+							    <div class="item active">
+							      <img src="assets/img/vr.jpg" alt="" class="img-responsive">
+							    </div>
+							    <div class="item">
+							      <img src="assets/img/vr-dark.jpg" alt="" class="img-responsive">
+							    </div>
+							    <div class="item">
+							      <img src="assets/img/vr.jpg" alt="" class="img-responsive">
+							    </div>
+							    <div class="item">
+							      <img src="assets/img/vr-dark.jpg" alt="" class="img-responsive">
+							    </div>
+							  </div>
+
+							  <!-- Left and right controls -->
+							  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+							    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+							    <span class="sr-only">Previous</span>
+							  </a>
+							  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+							    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+							    <span class="sr-only">Next</span>
+							  </a>
+							</div>
 						</div>
 						<p><a href="http://www.firebox.com/product/7017/Immerse-Virtual-Reality-Headset" target="_blank">Being sold at $45 on Firebox</a></p>
 						<button class="btn btn-lg btn-get-it"><span class="btn-price">$14</span><div class="get-it-txt">GET IT.</div></button>
@@ -96,15 +130,25 @@
 							<li>Look ma, no hands! It comes with head straps so your hands can do... other stuff</li>
 							<li>Tons of VR and 3D apps, movies, and games (we're even building a list for you <a href="/vr/resources">here</a>)</li>
 						</ul>
-
-						<div class="sale-data-point-container">
-							<p class="sale-data-point">Number required to unlock: 300 <a href="#" data-toggle="popover" data-trigger="hover" title="What's this?" data-content="TrueChimp is a crowdbuying portal. We can offer rock bottom prices because we gather everyone's money and buy direct from the factory. As a result, you pledge your money as a pre-order and you'll only be charged if we have met our minimum to make the order.">&nbsp;<i class="fa fa-fw fa-question-circle"></i></a></p>
-							<p class="sale-data-point">Sale end date: December 31st, 2015 <a href="#" data-toggle="popover" data-trigger="hover" title="What's this?" data-content="The deal goes offline after this date. We'll tally up the results and see if we've met our minimum. If we did, then you'll get notified with an email and we'll tell the manufacturers to start their production! If not, you will never be charged.">&nbsp;<i class="fa fa-fw fa-question-circle"></i></a></p>
-							<p class="sale-data-point">Estimated ship date: January 15th, 2015 <a href="#" data-toggle="popover" data-trigger="hover" title="What's this?" data-content="This is our best guess as to when we will be able to have the products in our warehouse ready to ship out to your door.">&nbsp;<i class="fa fa-fw fa-question-circle"></i></a></p>	
+						<div class="row">
+							<div class="col-md-6">
+								<p>Quality ABS construction, head straps, soft squishy face-contact so you can use it for hours on end. What more can you ask for at $14? It's even a top seller across the pond for $45!</p>
+								<p>Not into VR? Not a problem. Almost anyone else who has a smartphone would probably love this as a gift!</p>
+								<p>But <a href="#intro" class="intro-click"><strong><em>what is TrueChimp?</em></strong></a></p>
+							</div>
+							<div class="col-md-6">
+								<h4>Just look at this video</h4>
+								<p class="videoWrapper">
+									<iframe width="560" height="315" src="https://www.youtube.com/embed/ujYyE0lfSUk" frameborder="0" allowfullscreen></iframe>
+								</p>
+								<div class="sale-data-point-container">
+									<p class="sale-data-point">Number required to unlock: 300 <a href="#" data-toggle="popover" data-trigger="hover" title="What's this?" data-content="TrueChimp is a crowdbuying portal. We can offer rock bottom prices because we gather everyone's money and buy direct from the factory. As a result, you pledge your money as a pre-order and you'll only be charged if we have met our minimum to make the order.">&nbsp;<i class="fa fa-fw fa-question-circle"></i></a></p>
+									<p class="sale-data-point">Sale end date: December 31st, 2015 <a href="#" data-toggle="popover" data-trigger="hover" title="What's this?" data-content="The deal goes offline after this date. We'll tally up the results and see if we've met our minimum. If we did, then you'll get notified with an email and we'll tell the manufacturers to start their production! If not, you will never be charged.">&nbsp;<i class="fa fa-fw fa-question-circle"></i></a></p>
+									<p class="sale-data-point">Estimated ship date: January 15th, 2015 <a href="#" data-toggle="popover" data-trigger="hover" title="What's this?" data-content="This is our best guess as to when we will be able to have the products in our warehouse ready to ship out to your door.">&nbsp;<i class="fa fa-fw fa-question-circle"></i></a></p>	
+								</div>		
+							</div>
 						</div>
-
-						<p>Quality ABS construction, head straps, soft squishy face-contact so you can use it for hours on end. What more can you ask for at $14? It's even a top seller across the pond for $45! Not into VR? Not a problem. Almost anyone else who has a smartphone would probably love this as a gift!</p>
-						<p>But <a href="#intro" class="intro-click"><strong><em>what is TrueChimp?</em></strong></a></p>
+						
 						<h3 class="subscribe-prompt">Like what you see? <span class="tomato">Sign up</span> to get great deals on cool gadgets:</h3>
 
 						<!-- Begin MailChimp Signup Form -->
