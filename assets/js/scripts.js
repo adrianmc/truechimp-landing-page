@@ -1,26 +1,22 @@
 $(document).ready( function() {
 
   // Initializing tooltips
+  $('[data-toggle="popover"]').popover(); 
   $('[data-toggle="tooltip"]').tooltip(); 
   
   $('.intro-click').click(function(){
     $('html, body').animate({
-      scrollTop: $('#intro').offset().top - 50
+      scrollTop: $('#intro').offset().top
     }, 1000);
   });
   $('.contact-click').click(function(){
     $('html, body').animate({
-      scrollTop: $('#contact').offset().top - 50
-    }, 1000);
-  });
-  $('.explore-click').click(function(){
-    $('html, body').animate({
-      scrollTop: $('#explore').offset().top - 75
+      scrollTop: $('#contact').offset().top
     }, 1000);
   });
   $('.faq-click').click(function(){
     $('html, body').animate({
-      scrollTop: $('#faq').offset().top - 50
+      scrollTop: $('#faq').offset().top
     }, 1000);
   });
 

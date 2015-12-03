@@ -13,6 +13,55 @@
 /*	################################################################
 	0. CUSTOM STYLES
 ################################################################# */
+.sale-data-point-container {
+	margin-bottom: 15px;
+}
+
+.sale-data-point {
+	font-size: 14px;
+	line-height: 16px;
+	margin: 2px 0 4px 0;
+}
+
+h3.popover-title{
+	color: tomato !important;
+	background-color: #555;
+}
+
+.popover-content {
+	background-color: #2f2f2f;
+	color: #ddd;
+}
+
+.feature-list {
+	list-style: none;
+}
+.feature-list li {
+	margin-bottom: 4px;
+	font-size: 16px;
+	font-weight: 300;
+}	
+
+.feature-list li:before {
+	content: " ";
+	display: inline-block;
+	width: 10px;
+	height: 2px;
+	background: #ddd;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+
+.photo-gallery {
+	height: 310px;
+}
+
+.price-info-list {
+	list-style: none;
+	color: white;
+	margin: 15px 0;
+	vertical-align: middle;
+}
 
 .invert-bar {
 	background-color: tomato;
@@ -163,6 +212,7 @@ body {
 .mtb {margin-top: 50px; margin-bottom: 50px;}
 .mtb2 { margin-top: 100px; margin-bottom: 100px;}
 .pt {padding-top: 50px;}
+.pb {padding-bottom: 50px;}
 .ptb {padding-top: 80px; padding-bottom: 80px;}
 
 .clear {
@@ -210,6 +260,19 @@ a:focus {
 }
 
 /* BUTTONS */
+.btn-get-it {
+	background: tomato;
+	color: white;
+	border-radius: 6px;
+	font-weight: 300;
+	width: 226px;
+}
+
+.btn-price {
+	font-weight: 700;
+	font-size: 150%;
+}
+
 .btn-learn-more {
 	margin-top: 25px;
 }
@@ -274,7 +337,7 @@ h4 {
 /* HEADER SECTION */
 #h {
 	background: url(../img/header.jpg) no-repeat center center fixed;
-	/*background: #12a5f4;*/
+	background: #2f2f2f;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -284,6 +347,7 @@ h4 {
 	/*min-height: 480px;*/
 	width: 100%;
 	position: relative;
+	color: #ddd;
 }
 
 .header-photos {
@@ -317,6 +381,7 @@ h4 {
 
 #h p {
 	color: #dddddd;
+	font-weight: 400;
 }
 
 #h h1 {
@@ -346,6 +411,16 @@ h4 {
 }
 
 /* intro */
+
+#intro {
+	background-color: #2f2f2f;
+	color: white;
+}
+
+#intro p {
+	color: #bbb;
+}
+
 #intro hr {
 	margin: auto;
 }
